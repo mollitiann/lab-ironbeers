@@ -1,0 +1,48 @@
+<!-- layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>IronBeers</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">IronBeers</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/"
+            >Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <br>
+          <a class="nav-item nav-link" href="/beers">Beers</a>
+          <br>
+          <a class="nav-item nav-link" href="/random-beers">Random Beer</a>
+          <br>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+    {{{ body }}}
+    </main>
+    <footer class="footer">
+        Developed by Robson e Guilherme
+    </footer>
+
+  </body>
+</html>
